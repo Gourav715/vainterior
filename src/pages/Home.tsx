@@ -25,7 +25,7 @@ const previewServices = [
   },
   {
     title: 'False Ceiling',
-    image: 'https://i.pinimg.com/736x/7d/09/10/7d0910ad548b7cc3b9b50a37235c07e2.jpg',
+    image: 'https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
 ];
 
