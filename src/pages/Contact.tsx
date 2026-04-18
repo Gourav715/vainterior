@@ -191,7 +191,7 @@ export default function Contact() {
                       value={form.name}
                       onChange={handleChange}
                       placeholder="Your full name"
-                      className={`w-full bg-white/4 border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-white/6 ${
+                      className={`w-full bg-[#1a1a1a] border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:focus:bg-[#1f1f1f] ${
                         errors.name
                           ? 'border-red-500/60 focus:border-red-500'
                           : 'border-[#2A2A2A] focus:border-gold/60'
@@ -215,7 +215,7 @@ export default function Contact() {
                       value={form.email}
                       onChange={handleChange}
                       placeholder="your@email.com"
-                      className={`w-full bg-white/4 border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-white/6 ${
+                      className={`w-full bg-[#1a1a1a] border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-[#1f1f1f] ${
                         errors.email
                           ? 'border-red-500/60 focus:border-red-500'
                           : 'border-[#2A2A2A] focus:border-gold/60'
@@ -239,7 +239,7 @@ export default function Contact() {
                       value={form.phone}
                       onChange={handleChange}
                       placeholder="Your phone number"
-                      className={`w-full bg-white/4 border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-white/6 ${
+                      className={`w-full bg-[#1a1a1a] border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-[#1f1f1f] ${
                         errors.phone
                           ? 'border-red-500/60 focus:border-red-500'
                           : 'border-[#2A2A2A] focus:border-gold/60'
