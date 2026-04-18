@@ -185,66 +185,46 @@ export default function Contact() {
                   </label>
                   <div className="relative">
                     <User size={15} className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30" />
-                    <input
-                      type="text"
-                      name="name"
-                      value={form.name}
-                      onChange={handleChange}
-                      placeholder="Your full name"
-                      className={`w-full bg-white/4 border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-white/6 ${
-                        errors.name
-                          ? 'border-red-500/60 focus:border-red-500'
-                          : 'border-[#2A2A2A] focus:border-gold/60'
-                      }`}
-                    />
-                  </div>
-                  {errors.name && (
-                    <p className="font-poppins text-xs text-red-400 mt-1.5">{errors.name}</p>
-                  )}
-                </div>
+                    // ONLY showing the changed parts (3 inputs)
 
-                <div>
-                  <label className="block font-poppins text-xs text-white/50 tracking-wider uppercase mb-2">
-                    Email Address <span className="text-gold">*</span>
-                  </label>
-                  <div className="relative">
-                    <Mail size={15} className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30" />
-                    <input
-                      type="email"
-                      name="email"
-                      value={form.email}
-                      onChange={handleChange}
-                      placeholder="your@email.com"
-                      className={`w-full bg-white/4 border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-white/6 ${
-                        errors.email
-                          ? 'border-red-500/60 focus:border-red-500'
-                          : 'border-[#2A2A2A] focus:border-gold/60'
-                      }`}
-                    />
-                  </div>
-                  {errors.email && (
-                    <p className="font-poppins text-xs text-red-400 mt-1.5">{errors.email}</p>
-                  )}
-                </div>
+<input
+  type="text"
+  name="name"
+  value={form.name}
+  onChange={handleChange}
+  placeholder="Your full name"
+  className={`w-full bg-[#1a1a1a] border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-[#1f1f1f] ${
+    errors.name
+      ? 'border-red-500/60 focus:border-red-500'
+      : 'border-[#2A2A2A] focus:border-gold/60'
+  }`}
+/>
 
-                <div>
-                  <label className="block font-poppins text-xs text-white/50 tracking-wider uppercase mb-2">
-                    Phone Number <span className="text-gold">*</span>
-                  </label>
-                  <div className="relative">
-                    <Phone size={15} className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30" />
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={form.phone}
-                      onChange={handleChange}
-                      placeholder="Your phone number"
-                      className={`w-full bg-white/4 border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-white/6 ${
-                        errors.phone
-                          ? 'border-red-500/60 focus:border-red-500'
-                          : 'border-[#2A2A2A] focus:border-gold/60'
-                      }`}
-                    />
+<input
+  type="email"
+  name="email"
+  value={form.email}
+  onChange={handleChange}
+  placeholder="your@email.com"
+  className={`w-full bg-[#1a1a1a] border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-[#1f1f1f] ${
+    errors.email
+      ? 'border-red-500/60 focus:border-red-500'
+      : 'border-[#2A2A2A] focus:border-gold/60'
+  }`}
+/>
+
+<input
+  type="tel"
+  name="phone"
+  value={form.phone}
+  onChange={handleChange}
+  placeholder="Your phone number"
+  className={`w-full bg-[#1a1a1a] border rounded-xl px-4 pl-10 py-3.5 font-poppins text-sm text-white placeholder-white/25 outline-none transition-all duration-300 focus:bg-[#1f1f1f] ${
+    errors.phone
+      ? 'border-red-500/60 focus:border-red-500'
+      : 'border-[#2A2A2A] focus:border-gold/60'
+  }`}
+/>
                   </div>
                   {errors.phone && (
                     <p className="font-poppins text-xs text-red-400 mt-1.5">{errors.phone}</p>
